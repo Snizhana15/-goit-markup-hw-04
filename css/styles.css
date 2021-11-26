@@ -25,7 +25,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.link {
+a {
   text-decoration: none;
 }
 
@@ -119,7 +119,6 @@ color: var(--second-color);
 cursor: pointer;
 padding-bottom: 32px;
 padding-top: 32px;
-display: block;
 }
 .contacts-icon {
   margin-right: 10px;
@@ -139,6 +138,9 @@ display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .hero-title {
@@ -195,6 +197,7 @@ margin-right: 30px;
 }
 .features-title {
 font-weight: 700;
+font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color:var(--main-color);
@@ -246,7 +249,6 @@ border-radius: 0px 0px 4px 4px;
 padding-top: 30px;
 padding-bottom: 30px;
 }
-
 .team-text {
 font-size: 16px;
 line-height: 1.18;
@@ -271,12 +273,13 @@ margin-bottom: 16px;
   color: #afb1b8;
   background-color: #FFFFFF;
 }
-.team-social-link + .team-social-link {
-  margin-left: 10px;
+.team-social-item:not(:last-child){
+  margin-right: 10px;
 }
 
+
 .team-social-link:hover,
-.team-social-lin:focus {
+.team-social-link:focus {
 background-color:  var(--accent-color);
 color: #FFFFFF;
 }
@@ -443,8 +446,11 @@ flex-wrap: wrap;
 margin-left: -30px;
 margin-bottom: -30px;
 }
-.projects-item:hover,
-.projects-item:focus {
+.projects-link {
+  display: block;
+}
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-item {
